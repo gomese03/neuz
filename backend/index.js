@@ -1,6 +1,7 @@
-require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const NewsAPI = require('newsapi');
+require('dotenv').config();
 
 const apiKey = process.env.API_KEY;
 const newsapi = new NewsAPI(apiKey);
@@ -11,6 +12,9 @@ const getTopHeadlines = require('./API/topHeadlines');
 
 const app = express();
 const port = process.env.PORT || 3001;
+
+// Enable CORS for all routes
+app.use(cors());
 
 app.get('/api/sources', async (req, res) => {
   try {
