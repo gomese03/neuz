@@ -30,7 +30,7 @@ git clone https://github.com/gomese03/neuz.git
 
 #### 3. Run frontend
 - navigate to `/frontend/neuz` folder using command line terminal
-- run `nm ci` to install requied dependencies
+- run `npm ci` to install requied dependencies
 - run `npm start` to start the frontend
 - access the UI with `http://localhost:3000` in the browser
 
