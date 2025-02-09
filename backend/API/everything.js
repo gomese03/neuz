@@ -26,8 +26,8 @@ async function getEverything(newsapi) {
       q: 'bitcoin',
       sources: 'bbc-news,the-verge',
       domains: 'bbc.co.uk, techcrunch.com',
-      from: '2024-08-1',
-      to: '2024-08-16',
+      from: '2025-01-20',
+      to: '2025-01-30',
       language: 'en',
       sortBy: 'relevancy',
       page: 1
